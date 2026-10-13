@@ -1,0 +1,32 @@
+# Databasegegevens en API-sleutels (zie de *.example.php-bestanden in config/)
+/config/connection.php
+/config/keys.php
+.env
+.env.*
+!.env.example
+
+# Composer / npm
+/vendor/
+node_modules/
+
+# Door gebruikers geüploade bestanden
+/uploads/*
+!/uploads/.gitkeep
+
+# Database-dumps met echte gegevens
+*.sql.gz
+/database/dumps/
+
+# Editors
+.idea/
+.vscode/
+
+# Windows / macOS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs en tijdelijke bestanden
+*.log
+*.bak
+*.tmp

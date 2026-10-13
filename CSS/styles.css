@@ -1,0 +1,1586 @@
+/* ------------------  ALERTS ------------------ */
+.alert {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    font-size: 1rem;
+    box-shadow: 0 0.125rem 0.375rem hsla(0, 0%, 0%, 0.1);
+    animation: fadeIn 0.4s ease-in-out;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+    z-index: 1100;
+}
+
+.alert-error {
+    background-color: hsl(0, 100%, 95%);
+    border-top: 0.16rem solid hsl(0, 100%, 68%);
+    border-bottom: 0.16rem solid hsl(0, 100%, 68%);
+    color: hsl(0, 100%, 35%);
+}
+
+.alert-success {
+    background-color: hsl(137, 100%, 95%);
+    border-top: 0.16rem solid hsl(153, 60%, 53%);
+    border-bottom: 0.16rem solid hsl(153, 60%, 53%);
+    color: hsl(149, 91%, 22%);
+}
+
+.alert-melding {
+    background-color: hsl(36, 100%, 87%);
+    border-top: 0.16rem solid hsl(33, 77%, 54%);
+    border-bottom: 0.16rem solid hsl(34, 79%, 45%);
+    color: hsl(24, 89%, 36%);
+}
+
+.alert {
+    transition: opacity 0.6s ease;
+}
+
+/* ------------------  Navbar ------------------ */
+.navbar-header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+}
+
+.navbar-header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.navbar-header {
+    font-size: 25px;
+    font-weight: bold;
+}
+.logo{
+    width: 100px;
+    height: 40px;
+}
+
+.navbar-header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar-header-right {
+    float: right;
+}
+.navbar-lestegoed {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 1;
+    transition: background-color 0.3s;
+}
+
+.navbar-lestegoed:hover {
+    background-color: #45a049;
+    cursor: default;
+}
+
+.navbar-header-right {
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* ------------------  paketten overzicht ------------------ */
+.paketten {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.paket-container {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.pakket-card > div{
+    margin: 30px;
+}
+.pakket-card {
+    border: 2px solid #555;
+    border-radius: 25px;
+    width: 300px;
+    padding: 30px 20px;
+    transition: 0.3s ease;
+}
+
+.pakket-card:hover {
+    border-color: #00ff88;
+    transform: translateY(-5px);
+}
+
+.pakket-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.pakket-card p {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.pakket-card .prijs {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.pakketten-button {
+
+    padding: 8px 20px;
+    background: transparent;
+    border: 1px solid black;
+    color: #2E2E2F;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pakketten-button:hover {
+    border-color: #00ff88;
+    transform: translateY(-5px);
+}
+/* ------------------  paketten aanpassen ------------------ */
+.aanpassen{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.info{
+    padding: 25px;
+    border: 2px solid #555;
+    border-radius: 25px;
+    width: 50%;
+}
+.info > div{
+    margin:10px;
+}
+.info label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="date"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="nummer"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    color: #555;
+    box-sizing: border-box;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* ruimte tussen knoppen */
+    margin-top: 20px;
+}
+.btn-opslaan {
+    background: #22c55e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn-terug {
+    background: #e5e7eb;
+    color: #111827;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+}
+/* ===== WRAPPER (zorgt dat hij midden staat) ===== */
+
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* horizontaal centreren */
+    margin-top: 40px;
+}
+
+/* ===== COMPACTE FORM ===== */
+
+.form-compact {
+    width: 420px;        /* 🔥 vaste compacte breedte */
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border: 1px solid #e5e7eb;
+}
+
+/* ===== TITEL ===== */
+
+.form-compact h2 {
+    margin-top: 0;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* ===== INPUTS ===== */
+
+.form-compact label {
+    display: block;
+    margin-top: 14px;
+    font-weight: 600;
+}
+
+.form-compact input,
+.form-compact select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* ===== BUTTON ===== */
+
+.form-compact button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-compact button:hover {
+    background: #27ae60;
+}
+
+/* login */
+.auth-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.auth-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 700px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.auth-container h1 {
+    grid-column: span 2;
+    text-align: center;
+    color: #1b5e20;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full {
+    grid-column: span 2;
+}
+
+.auth-container label {
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 5px;
+}
+
+.auth-input, .auth-address {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #a5d6a7;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.auth-input:focus, .auth-address:focus {
+    border-color: #2e7d32;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.4);
+}
+
+.auth-address {
+    background-color: #ffffff;
+    color: #2e7d32;
+    font-size: 14px;
+}
+
+.auth-address option {
+    padding: 5px;
+}
+
+.auth-button {
+    grid-column: span 2;
+    width: 100%;
+    padding: 11px;
+    margin-top: 20px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #1b5e20;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+    .auth-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .full {
+        grid-column: span 1;
+    }
+}
+/* login*/
+
+/* ===== FORM CARD ===== */
+
+.form-card {
+    max-width: 520px;
+    width: 100%;
+    padding: 35px 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+    border: 1px solid #e5e7eb;
+    animation: fadeInUp 0.4s ease;
+}
+
+/* ===== TITEL ===== */
+
+.form-card h2 {
+    margin-top: 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+/* ===== FORM STRUCTUUR ===== */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ===== INPUT VELDEN ===== */
+
+.field label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.field input,
+.field select {
+    width: 100%;
+    padding: 12px 13px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    background: #f9fafb;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Focus effect */
+.field input:focus,
+.field select:focus {
+    outline: none;
+    border-color: #22c55e;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(34,197,94,0.15);
+}
+
+/* ===== GRID (2 kolommen) ===== */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+/* ===== PRIMAIRE BUTTON ===== */
+
+.btn-primary {
+    width: 100%;
+    padding: 11px;
+    margin-top: 20px;
+
+    padding: 16px 18px;
+    border: none;
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    box-shadow: 0 6px 18px rgba(22,163,74,0.35);
+
+    transition: all 0.25s ease;
+}
+
+/* Hover */
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(22,163,74,0.45);
+    background: linear-gradient(135deg, #22c55e, #15803d);
+}
+
+/* Klik effect */
+.btn-primary:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== ANIMATIE ===== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container{
+    width:700px;
+    margin:auto;
+}
+
+.green-form{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.green-form input{
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.green-form button{
+    background:#2ecc71;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.green-form button:hover{
+    background:#27ae60;
+}
+.container{
+    width:900px;
+    margin:auto;
+}
+
+.green-table{
+    width:100%;
+    background:white;
+    border-collapse:collapse;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.green-table th{
+    background:#2ecc71;
+    color:white;
+    padding:12px;
+}
+
+.green-table td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+.edit-btn{
+    background:#27ae60;
+    color:white;
+    padding:6px 12px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+/* ===== PAGINA ===== */
+.container{
+    width: 1000px;
+    margin: 40px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TITEL */
+.container h1{
+    color: #1e7f4f;
+    margin-bottom: 20px;
+}
+
+/* ===== FORM / KAART ===== */
+.form-box{
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #e3f2e9;
+    padding: 25px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* ===== TABEL ALS FORM ===== */
+.form-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* KOP */
+.form-table th{
+    background: #2ecc71;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* VAKJES */
+.form-table td{
+    padding: 14px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* LAATSTE RIJ GEEN BORDER */
+.form-table tr:last-child td{
+    border-bottom: none;
+}
+
+/* ===== KNOP IN VAK ===== */
+.action-box{
+    padding: 6px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* KNOP */
+.edit-btn{
+    background: #27ae60;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.edit-btn:hover{
+    background: #1e8449;
+}
+
+/*--------Rijinstructeurs overzicht-----------*/
+.container{
+    width: 70%;
+    margin: 60px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.add-btnheader{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.add-btn{
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-btn:hover{
+    background-color: #1b5e20;
+}
+
+.instructeur-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-header{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.table-data{
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    min-width: 200px;
+}
+
+.table-row:nth-child(even){
+    background-color: #f7fbf7;
+}
+
+.action-btn{
+    margin: 10px;
+    background-color: #66bb6a;
+    border: none;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-btn:hover{
+    background-color: #388e3c;
+}
+.table-data:last-child{
+    text-align: right;
+}
+/*--------Rijinstructeurs overzicht-----------*/
+
+.lespakket_button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #388e3c ;
+    color: #2E2E2F;
+    padding: 15px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    margin-top:40px;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+h1{
+    margin:0;
+}
+
+.week-navigation{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.week-btn{
+    background:#2c3e50;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.week-btn:hover{
+    background:#1f2d3a;
+}
+
+.week-text{
+    font-weight:bold;
+    font-size:16px;
+}
+
+/* ===== CONTAINER ===== */
+
+.container {
+    width: 95%;
+    margin: 30px auto;
+}
+
+/* ===== TOP BAR ===== */
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.week-navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.week-btn {
+    text-decoration: none;
+    background: #1f4fd1;
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+
+.week-text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.token-text {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* ===== ALERTS ===== */
+
+.error {
+    background: #ffd8d8;
+    color: #a40000;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.success {
+    background: #d8ffe0;
+    color: #067a2f;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* ===== ROOSTER TABEL ===== */
+
+.rooster {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    table-layout: fixed;
+}
+
+/* 6 kolommen totaal: Tijd + 5 dagen */
+.rooster th,
+.rooster td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/* ===== HEADER ===== */
+
+.rooster th {
+    background: #2c3e50;
+    color: white;
+    height: 70px;
+}
+
+.datum {
+    display: block;
+    font-size: 12px;
+    margin-top: 3px;
+    color: #ddd;
+}
+
+/* ===== BODY CELLEN ===== */
+
+.rooster td {
+    height: 65px;
+    background: #ffffff;
+}
+
+.rooster tbody tr:nth-child(even) td {
+    background: #f9f9f9;
+}
+
+/* ===== TIJD KOLOM ===== */
+
+.rooster td:first-child {
+    font-weight: bold;
+    background: #f5f5f5;
+    width: 16.66%;
+}
+
+/* ===== OVERIGE KOLOMMEN GELIJK ===== */
+
+.rooster th:first-child,
+.rooster td:first-child {
+    width: 16.66%;
+}
+
+.rooster th:not(:first-child),
+.rooster td:not(:first-child) {
+    width: 16.66%;
+}
+
+/* ===== FORM IN CEL MIDDEN ===== */
+
+.rooster td form {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== BUTTON ALGEMEEN ===== */
+
+button {
+    display: inline-block;
+    width: 90%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* hover alleen voor klikbare buttons */
+button:not(:disabled):hover {
+    opacity: 0.9;
+}
+
+.actie_button{
+    width: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #388e3c;
+    color: #2E2E2F;
+    padding: 15px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+.date-navigation a {
+    background-color: #2ecc71;
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.date-navigation a:hover {
+    background-color: #27ae60;
+}
+
+/*Geschidens*/
+/* ── Paginaheader ── */
+.pagina-header {
+    background: linear-gradient(135deg, #14532d 0%, #16a34a 100%);
+    padding: 48px 0 36px;
+    text-align: center;
+    box-shadow: 0 4px 32px rgba(22, 101, 52, 0.18);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decoratief diagonaal patroon in de header */
+.pagina-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 40px,
+            rgba(255, 255, 255, 0.03) 40px,
+            rgba(255, 255, 255, 0.03) 80px
+    );
+}
+
+.pagina-header__titel {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+
+.pagina-header__subtitel {
+    margin-top: 6px;
+    color: #86efac;
+    font-size: 0.95rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+/* ── Tabbalk ── */
+.tabbalk {
+    display: flex;
+    gap: 0;
+    background: #ffffff;
+    border-bottom: 2px solid #dcfce7;
+    overflow-x: auto;
+    scrollbar-width: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 12px rgba(22, 101, 52, 0.07);
+}
+
+.tabbalk::-webkit-scrollbar {
+    display: none;
+}
+
+/* Standaard tab knop */
+.tabbalk__tab {
+    flex: 1;
+    min-width: 140px;
+    padding: 16px 20px;
+    border: none;
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #4b7c60;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.tabbalk__tab:hover {
+    color: #166534;
+    background: #f0fdf4;
+}
+
+.tabbalk__tab--actief {
+    color: #166534;
+    border-bottom-color: #16a34a;
+    background: #f0fdf4;
+    font-weight: 600;
+}
+
+.pagina-inhoud {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+}
+
+.sectie {
+    margin-bottom: 48px;
+    animation: inschuiven 0.5s ease both;
+}
+
+.sectie--vertraagd {
+    animation-delay: 0.1s;
+}
+
+@keyframes inschuiven {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sectie__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.sectie__icoon {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #22c55e, #166534);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+}
+
+.sectie__icoon svg {
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+}
+
+.sectie__titel {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: #14532d;
+}
+
+.leskaart {
+    background: #ffffff;
+    border: 1.5px solid #bbf7d0;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 4px 24px rgba(22, 101, 52, 0.10);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.leskaart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(22, 101, 52, 0.14);
+}
+
+/* Datumblok in de leskaart */
+.leskaart__datum {
+    min-width: 54px;
+    text-align: center;
+}
+
+.leskaart__datum-dag {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #166534;
+    line-height: 1;
+}
+
+.leskaart__datum-maand {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #4b7c60;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Verticale scheidingslijn in de leskaart */
+.leskaart__scheidingslijn {
+    width: 1.5px;
+    height: 44px;
+    background: #bbf7d0;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+/* Informatiblok in de leskaart */
+.leskaart__info {
+    flex: 1;
+}
+
+.leskaart__tijd {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0f2d1a;
+}
+
+.leskaart__instructeur {
+    font-size: 0.85rem;
+    color: #4b7c60;
+    margin-top: 2px;
+}
+
+.leskaart__instructeur-naam {
+    font-weight: 600;
+    color: #166534;
+}
+
+/* Status en actieknop rechts */
+.leskaart__status {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+/* ── Statusbadge ── */
+.statusbadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Gekleurde stip voor elke statusbadge */
+.statusbadge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+/* Geel voor ingepland */
+.statusbadge--ingepland {
+    background: #fef9c3;
+    color: #854d0e;
+    border: 1px solid #fde047;
+}
+
+/* Groen voor voltooid */
+.statusbadge--voltooid {
+    background: #dcfce7;
+    color: #14532d;
+    border: 1px solid #86efac;
+}
+
+/* Rood voor geannuleerd */
+.statusbadge--geannuleerd {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+/* ── Wijzigenknop ── */
+.wijzigenknop {
+    padding: 8px 18px;
+    background: linear-gradient(135deg, #16a34a, #166534);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.84rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+    white-space: nowrap;
+}
+
+.wijzigenknop:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+}
+
+/* ── Pakketraster ── */
+.pakketraster {
+    display: grid;
+    gap: 14px;
+}
+
+/* ── Pakketkaart ── */
+.pakketkaart {
+    background: #ffffff;
+    border: 1.5px solid #bbf7d0;
+    border-radius: 14px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 24px rgba(22, 101, 52, 0.10);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Groene accentstreep links */
+.pakketkaart::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #22c55e, #166534);
+    border-radius: 4px 0 0 4px;
+}
+
+/* Gouden accentstreep voor pro-variant */
+.pakketkaart--pro::before {
+    background: linear-gradient(180deg, #f59e0b, #d97706);
+}
+
+.pakketkaart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(22, 101, 52, 0.14);
+}
+
+.pakketkaart__naam {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.1rem;
+    color: #14532d;
+}
+
+.pakketkaart__meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Prijsblok in de pakketkaart */
+.pakketkaart__prijs {
+    text-align: right;
+}
+
+.pakketkaart__prijs-label {
+    font-size: 0.72rem;
+    color: #4b7c60;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pakketkaart__prijs-bedrag {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #166534;
+}
+
+/* Kortingsbadge standaard groen */
+.kortingsbadge {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 12px;
+    background: #dcfce7;
+    border: 1px solid #86efac;
+    border-radius: 10px;
+}
+
+/* Kortingsbadge goud voor pro-pakket */
+.kortingsbadge--pro {
+    background: #fef3c7;
+    border-color: #fcd34d;
+}
+
+.kortingsbadge__label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: #4b7c60;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.kortingsbadge__bedrag {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #166534;
+}
+
+.kortingsbadge--pro .kortingsbadge__bedrag {
+    color: #92400e;
+}
+
+/* Tekst wanneer er geen korting is */
+.geen-korting-tekst {
+    font-size: 0.82rem;
+    color: #4b7c60;
+    font-style: italic;
+}
+/*Geschidens*/
+
+/*factuur*/
+/* ── Factuur pagina ── */
+.factuur-wrapper {
+    max-width: 860px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: inherit;
+    color: #1a1a2e;
+}
+
+.factuur-kop {
+    margin-bottom: 2.5rem;
+}
+
+.factuur-kop h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 .25rem;
+}
+
+.factuur-kop p {
+    color: #6b7280;
+    margin: 0;
+    font-size: .9rem;
+}
+
+/* ── Saldo-overzicht bovenaan ── */
+.saldo-rij {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.saldo-kaart {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}
+
+.saldo-kaart--rest {
+    border-color: #6366f1;
+    background: #f5f3ff;
+}
+
+.saldo-kaart__label {
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+.saldo-kaart--rest .saldo-kaart__label {
+    color: #4f46e5;
+}
+
+.saldo-kaart__getal {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #111827;
+}
+
+.saldo-kaart--rest .saldo-kaart__getal {
+    color: #4f46e5;
+}
+
+.saldo-kaart__sub {
+    font-size: .82rem;
+    color: #9ca3af;
+}
+
+/* ── Tabellen ── */
+.factuur-sectie {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1.75rem;
+}
+
+.factuur-sectie__hoofd {
+    padding: 1rem 1.5rem;
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.factuur-sectie__hoofd svg {
+    width: 20px;
+    height: 20px;
+    fill: #6366f1;
+    flex-shrink: 0;
+}
+
+.factuur-tabel {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .9rem;
+}
+
+.factuur-tabel thead tr {
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.factuur-tabel thead th {
+    padding: .75rem 1.5rem;
+    text-align: left;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+.factuur-tabel thead th.rechts {
+    text-align: right;
+}
+
+.factuur-tabel tbody tr {
+    border-bottom: 1px solid #f3f4f6;
+    transition: background .15s;
+}
+
+.factuur-tabel tbody tr:last-child {
+    border-bottom: none;
+}
+
+.factuur-tabel tbody tr:hover {
+    background: #fafafa;
+}
+
+.factuur-tabel td {
+    padding: .85rem 1.5rem;
+    vertical-align: middle;
+}
+
+.factuur-tabel td.rechts {
+    text-align: right;
+}
+
+.badge-pakket {
+    display: inline-block;
+    background: #ede9fe;
+    color: #5b21b6;
+    font-size: .72rem;
+    font-weight: 700;
+    padding: .2rem .55rem;
+    border-radius: 999px;
+    letter-spacing: .03em;
+}
+
+.badge-les {
+    display: inline-block;
+    background: #dcfce7;
+    color: #15803d;
+    font-size: .72rem;
+    font-weight: 700;
+    padding: .2rem .55rem;
+    border-radius: 999px;
+    letter-spacing: .03em;
+}
+
+/* ── Totaal-blok ── */
+.totaal-blok {
+    margin-left: auto;
+    width: 280px;
+    border-top: 2px solid #e5e7eb;
+    padding-top: 1rem;
+}
+
+.totaal-blok__rij {
+    display: flex;
+    justify-content: space-between;
+    padding: .35rem 1.5rem;
+    font-size: .9rem;
+    color: #374151;
+}
+
+.totaal-blok__rij--eindtotaal {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #111827;
+    border-top: 1px solid #d1d5db;
+    padding-top: .6rem;
+    margin-top: .25rem;
+}
+
+.totaal-blok__rij--rest {
+    font-weight: 700;
+    color: #4f46e5;
+    font-size: 1.05rem;
+    border-top: 2px solid #c7d2fe;
+    padding-top: .6rem;
+    margin-top: .35rem;
+}
+
+.geen-items {
+    padding: 1.5rem;
+    color: #9ca3af;
+    font-size: .9rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .saldo-rij { grid-template-columns: 1fr; }
+    .factuur-tabel thead th,
+    .factuur-tabel td { padding: .65rem .9rem; }
+    .totaal-blok { width: 100%; }
+}
+/*factuur*/
